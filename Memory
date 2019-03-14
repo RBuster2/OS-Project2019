@@ -1,0 +1,21 @@
+
+public class Memory {
+  float [] register;
+  
+  public int Size() { 
+  //determine length/size of the register
+  return register.length;
+  }
+  
+  public void write(float num, int address){
+  if(address >= register.length)
+    System.out.println("Exceeds/Exceeded");
+  else
+    register[address] = num;
+    }
+ }
+ 
+ // Feel like I might be missing something, but the description of memory didn't really give me much to work with.
+ // Says that this module is the only one by which RAM can be accessed. Also says that an address can be passed to it,
+ and that it writes "datum" into RAM. Figured that could be done through the write method. Also couldn't remember if we
+ discussed the data types for the registers, etc.
