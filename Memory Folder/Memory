@@ -1,0 +1,20 @@
+public class Memory {
+  float [] register;
+  
+  public int Size() {
+  /* determine length/size of the register */
+  return register.length;
+  }
+  
+  public void Write(float num, int address){
+  if(address >= register.length)
+    System.out.prinlin("Exceeded or Exceeds");
+  else
+    register[address] = num;
+    }
+   }
+   
+   /* Feel like I'm missing something. Memory section in the project doc. didn't really give too much to go on.
+   Mentions it being the only module by which RAM can access, absolute/physical must be passed through, and 
+   writes "datum" into RAM. Assumed that that could be accomplished through the write method. Also, wasn't
+   sure as to what type we were using for the register and address */
